@@ -12,17 +12,23 @@
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
       integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
       crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
    <link rel="stylesheet" href="./scss/style.css">
 </head>
 
 <body>
    <header id="header">
       <div class="container">
-         <div class="header-content flex">
+         <div class="header-content flex" id="nav">
             <div class="logo">
                <img src="./assets/logo.png" alt="">
             </div>
             <div class="nav-link">
+               <div class="cross" id="cross">
+                  <i class="fa-solid fa-xmark"></i>
+               </div>
                <ul class="flex">
                   <li><a href="">Tiger Safari Tours</a></li>
                   <li><a href="">Photo Tours</a></li>
@@ -32,6 +38,9 @@
                   <li><a href="">Photo Stories</a></li>
                   <li><a href="">Contact Us</a></li>
                </ul>
+            </div>
+            <div class="menu" id="menu">
+               <i class="fa-solid fa-bars"></i>
             </div>
          </div>
       </div>
@@ -88,6 +97,8 @@
                   Ranthambhore unlike any other. It is the land of tigers and is an intoxicating mix of nature, history
                   and wildlife.
                </p>
+               <a href="#" class="button">Read More</a>
+
             </div>
          </div>
       </div>
@@ -341,22 +352,30 @@
                </div>
                <div class="travels left-col">
                   <div class="travel">
-                     <img src="./assets/delhi-airport-People-Mover.jpg" alt="">
+                     <div class="image">
+                        <img src="./assets/delhi-airport-People-Mover.jpg" alt="">
+                     </div>
                      <p class="title">Arrival in New Delhi</p>
                      <p class="days">Day 1</p>
                   </div>
                   <div class="travel">
-                     <img src="./assets/flights.jpeg" alt="">
+                     <div class="image">
+                        <img src="./assets/flights.jpeg" alt="">
+                     </div>
                      <p class="title">Flight to Jabalpur, Drive to Bandhavgarh (175km / 3.30 hours)</p>
                      <p class="days">Day 2</p>
                   </div>
                   <div class="travel">
-                     <img src="./assets/bandhavgarh-national-park.jpg" alt="">
+                     <div class="image">
+                        <img src="./assets/bandhavgarh-national-park.jpg" alt="">
+                     </div>
                      <p class="title">In Bandhavgarh National Park</p>
                      <p class="days">Day 3 to Day 6</p>
                   </div>
                   <div class="travel">
-                     <img src="./assets/flights.jpeg" alt="">
+                     <div class="image">
+                        <img src="./assets/flights.jpeg" alt="">
+                     </div>
                      <p class="title">Drive to Jabalpur (175km / 3.30 hours), Flight back to New Delhi</p>
                      <p class="days">Day 7</p>
                   </div>
@@ -392,12 +411,386 @@
       </div>
    </div>
 
+   <div class="why-travel">
+      <div class="container">
+         <div class="why-travel-content">
+            <p class="top-title">
+               Safari
+            </p>
+            <p class="title">
+               <span>Why Travel With </span>StripeScape Safaris?
+            </p>
+            <div class="box-section flex">
+               <div class="box">
+                  <div class="icon-box">
+                     <img src="./assets/people-1.png" alt="cube">
+                  </div>
+                  <div class="content-box">
+                     <h3 class="box-title">We are Indian</h3>
+                     <p class="paragraph ">Born and raised in this beautiful country, we have an innate
+                        understanding of its diverse landscapes and wildlife. </p>
+                     <p class="paragraph ">As avid travelers ourselves, we personally embark on safaris during
+                        our holidays allowing us to appreciate the intricacies that contribute to creating each journey
+                        as a truly unforgettable experience.</p>
+                  </div>
+               </div>
+               <div class="box">
+                  <div class="icon-box">
+                     <img src="./assets/expert-1.png" alt="cube">
+                  </div>
+                  <div class="content-box">
+                     <h3 class="box-title">We are Safari Specialists</h3>
+                     <p class="paragraph ">With unparalleled firsthand knowledge of each destination, lodge,
+                        and activity, our team spends over 365 days a year on safari.</p>
+                     <p class="paragraph ">Count on us for unbiased advice and personalized recommendations
+                        for an extraordinary wildlife adventure.</p>
+                     <p class="paragraph ">Let us curate an unforgettable safari experience tailored to your
+                        preferences and interests.</p>
+                  </div>
+               </div>
+               <div class="box">
+                  <div class="icon-box">
+                     <img src="./assets/guarantee-1.png" alt="cube">
+                  </div>
+                  <div class="content-box">
+                     <h3 class="box-title">Unbeatable Value Guaranteed</h3>
+                     <p class="paragraph ">Our Best Price Promise Ensures Unmatched Deals on Your Dream Safari
+                        Tours!</p>
+                     <p class="paragraph ">Unleash the Adventure of a Lifetime with StripeScape Safaris.</p>
+                  </div>
+               </div>
+               <div class="box">
+                  <div class="icon-box">
+                     <img src="./assets/technical-support-1.png" alt="cube">
+                  </div>
+                  <div class="content-box">
+                     <h3 class="box-title">Your Investment Supports India</h3>
+                     <p class="paragraph ">When you book with us, your money stays in India, contributing to
+                        the conservation efforts and local communities, ensuring a sustainable future for the
+                        magnificent wildlife and the beautiful land we explore together.</p>
+                  </div>
+               </div>
+               <div class="box">
+                  <div class="icon-box">
+                     <img src="./assets/social-care-1.png" alt="cube">
+                  </div>
+                  <div class="content-box">
+                     <h3 class="box-title">Round-the-Clock Safari Assistance</h3>
+                     <p class="paragraph ">Our team is available 24/7 to provide you with exceptional safari
+                        support, ensuring a seamless and unforgettable experience throughout your wildlife adventure.
+                     </p>
+                  </div>
+               </div>
+               <div class="box">
+                  <div class="icon-box">
+                     <img src="./assets/tourism-1.png" alt="cube">
+                  </div>
+                  <div class="content-box">
+                     <h3 class="box-title">Responsible Tourism</h3>
+                     <p class="paragraph ">We strive to protect and preserve the natural habitats of the
+                        magnificent tigers and other wildlife, fostering sustainable conservation efforts.</p>
+                     <p class="paragraph ">Leave Only Footprints, Take Only Memories.</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <div class="top-rated">
+      <div class="container">
+         <div class="top-rated-safari">
+            <p class="top-title">
+               Safari
+            </p>
+            <p class="title">
+               <span>VIEW OUR TOP RATED SAFARI</span> TOUR PACKAGES
+            </p>
+            <div class="card-section flex">
+               <div class="card">
+                  <div class="card-img">
+                     <img src="./assets/Classic-Tiger-Safari.jpg" alt="">
+                  </div>
+                  <div class="card-content">
+                     <h3 class="card-title">
+                        Classic Tiger Safari
+                     </h3>
+                     <p class="park-covered">
+                        Parks Covered: Ranthambhore-Bandhavgarh
+                     </p>
+                     <p class="days">
+                        Tour Duration: 10 days
+                     </p>
+                     <div class="card-btn">
+                        <a href="#">VIEW THIS TOUR</a>
+                     </div>
+                  </div>
+               </div>
+               <div class="card">
+                  <div class="card-img">
+                     <img src="./assets/Wild-Symphony-Safari-Escapes.jpg" alt="">
+                  </div>
+                  <div class="card-content">
+                     <h3 class="card-title">
+                        Wild Symphony Safari Escapes
+                     </h3>
+                     <p class="park-covered">
+                        Parks Covered: Corbett-Ranthambore
+                     </p>
+                     <p class="days">
+                        Tour Duration: 9 days
+                     </p>
+                     <div class="card-btn">
+                        <a href="#">VIEW THIS TOUR</a>
+                     </div>
+                  </div>
+               </div>
+               <div class="card">
+                  <div class="card-img">
+                     <img src="./assets/Tiger-Trails-of-India.jpg" alt="">
+                  </div>
+                  <div class="card-content">
+                     <h3 class="card-title">
+                        Tiger Trails of India
+                     </h3>
+                     <p class="park-covered">
+                        Parks Covered: Kanha-Bandhavgarh
+                     </p>
+                     <p class="days">
+                        Tour Duration: 10 days
+                     </p>
+                     <div class="card-btn">
+                        <a href="#">VIEW THIS TOUR</a>
+                     </div>
+                  </div>
+               </div>
+               <div class="card">
+                  <div class="card-img">
+                     <img src="./assets/testimonials-tiger-image.jpg" alt="">
+                  </div>
+                  <div class="card-content">
+                     <h3 class="card-title">
+                        Tiger Essence Journeys
+                     </h3>
+                     <p class="park-covered">
+                        Parks Covered: Bandhavgarh
+                     </p>
+                     <p class="days">
+                        Tour Duration: 7 days
+                     </p>
+                     <div class="card-btn">
+                        <a href="#">VIEW THIS TOUR</a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <div class="testimonals">
+      <div class="container">
+         <div class="testimonals-section flex">
+            <div class="left">
+               <div class="image">
+                  <img src="./assets/Bandhavgarh-4.jpg" alt="">
+               </div>
+            </div>
+            <div class="right">
+               <p class="top-title">
+                  Testimonials
+               </p>
+               <p class="title">
+                  <span>WHAT PEOPLE
+                     SAYS</span> ABOUT US
+               </p>
+               <div id="owl-carousel-gallery-demo" class="owl-carousel owl-theme">
+                  <div href="#" class="owl-carousel-item">
+                     <p class="paragraph">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo fugiat illum mollitia aliquid odit
+                        vel, praesentium nisi nihil quidem eum unde expedita quasi, magnam officia atque ea alias.
+                     </p>
+                     <p class="paragraph">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo fugiat illum mollitia aliquid odit
+                        vel, praesentium nisi nihil quidem eum unde expedita quasi, magnam officia atque ea alias.
+                     </p>
+                     <div class="user">
+                        <div class="user-img">
+                           <img src="./assets/profile.png" alt="">
+                        </div>
+                        <p class="name">
+                           John Maclein
+                        </p>
+                     </div>
+                  </div>
+                  <div href="#" class="owl-carousel-item">
+                     <p class="paragraph">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo fugiat illum mollitia aliquid odit
+                        vel, praesentium nisi nihil quidem eum unde expedita quasi, magnam officia atque ea alias.
+                     </p>
+                     <p class="paragraph">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo fugiat illum mollitia aliquid odit
+                        vel, praesentium nisi nihil quidem eum unde expedita quasi, magnam officia atque ea alias.
+                     </p>
+                     <div class="user">
+                        <div class="user-img">
+                           <img src="./assets/profile.png" alt="">
+                        </div>
+                        <p class="name">
+                           John Maclein
+                        </p>
+                     </div>
+                  </div>
+                  <div href="#" class="owl-carousel-item">
+                     <p class="paragraph">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo fugiat illum mollitia aliquid odit
+                        vel, praesentium nisi nihil quidem eum unde expedita quasi, magnam officia atque ea alias.
+                     </p>
+                     <p class="paragraph">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo fugiat illum mollitia aliquid odit
+                        vel, praesentium nisi nihil quidem eum unde expedita quasi, magnam officia atque ea alias.
+                     </p>
+                     <div class="user">
+                        <div class="user-img">
+                           <img src="./assets/profile.png" alt="">
+                        </div>
+                        <p class="name">
+                           John Maclein
+                        </p>
+                     </div>
+                  </div>
+                  <div href="#" class="owl-carousel-item">
+                     <p class="paragraph">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo fugiat illum mollitia aliquid odit
+                        vel, praesentium nisi nihil quidem eum unde expedita quasi, magnam officia atque ea alias.
+                     </p>
+                     <p class="paragraph">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo fugiat illum mollitia aliquid odit
+                        vel, praesentium nisi nihil quidem eum unde expedita quasi, magnam officia atque ea alias.
+                     </p>
+                     <div class="user">
+                        <div class="user-img">
+                           <img src="./assets/profile.png" alt="">
+                        </div>
+                        <p class="name">
+                           John Maclein
+                        </p>
+                     </div>
+                  </div>
+
+
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <footer>
+      <img src="./assets/background__layout.png" alt="">
+      <div class="container">
+         <div class="footer-section flex">
+            <div class="contact col">
+               <p class="title">
+                  CONTACT US
+               </p>
+               <div class="content">
+                  <p class="address">
+                     Office # 2, First Floor, Express Plaza-1 LSC-9, Derawal Nagar, New Delhi 110009 India
+                  </p>
+                  <p class="email-title">
+                     <span>Email:</span>
+                     <a class="email" href="mailto:stripescapesafaris@gmail.com">stripescapesafaris@gmail.com</a>
+                  </p>
+                  
+                  <p class="phone">
+                     <span>Phone / Whatsapp:</span> +91-9540520925
+                  </p>
+                  <p class="follow titles">
+                     Follow Us on Social Media
+                  </p>
+                  <div class="social-links">
+                     <p class="facebook"><a href="#" target="_blank"><i class="fa-brands fa-facebook-f"></i></a></p>
+                     <p class="twitter"><a href="#" target="_blank"><i class="fa-brands fa-twitter"></i></a></p>
+                     <p class="whatsapp"><a href="#" target="_blank" rel="nofollow"><i
+                              class="fa-brands fa-whatsapp"></i></a></p>
+                     <p class="instagram"><a href="#" target="_blank"><i class="fa-brands fa-instagram"></i></a></p>
+                     <p class="youtube"><a href="#" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                     </p>
+                  </div>
+               </div>
+            </div>
+            <div class="tours col">
+               <p class="title">
+                  TIGER SAFARI TOURS
+               </p>
+               <ul class="content">
+                  <li><a href="">Classic Tiger Safari</a></li>
+                  <li><a href="">High-End Luxury Safaris</a></li>
+                  <li><a href="">Tiger Tales & Cultural Trails</a></li>
+                  <li><a href="">Tiger Essence Journeys</a></li>
+                  <li><a href="">Wild Opulence Tour</a></li>
+                  <li><a href="">Wild Symphony Safari Escapes</a></li>
+               </ul>
+            </div>
+            <div class="photography col">
+               <p class="title">TIGER PHOTOGRAPHY TOURS</p>
+               <ul class="content">
+                  <li><a href="">Feline Focus Photo Tour</a></li>
+                  <li><a href="">Chilling with Tigers</a></li>
+                  <li><a href="">Tiger Lens Safaris</a></li>
+                  <li><a href="">Capturing Tigerscapes</a></li>
+                  <li><a href="">Tiger Trails of India</a></li>
+                  <li><a href="">Wild Snap Safaris</a></li>
+               </ul>
+            </div>
+            <div class="parks col">
+               <p class="title">
+                  BEST TIGER PARKS OF INDIA
+               </p>
+               <ul class="content">
+                  <li><a href="">Ranthambore National Park</a></li>
+                  <li><a href="">Bandhavgarh National Park</a></li>
+                  <li><a href="">Corbett National Park</a></li>
+                  <li><a href="">Kanha National Park</a></li>
+                  <li><a href="">Pench National Park</a></li>
+                  <li><a href="">Tadoba National Park</a></li>
+               </ul>
+            </div>
+            <div class="resources col">
+               <p class="title">USEFUL RESOURCES</p>
+               <ul class="content">
+                  <li><a href="">About Us</a></li>
+                  <li><a href="">FAQs for Tours and Safaris</a></li>
+                  <li><a href="">When to travel</a></li>
+                  <li><a href="">Where to go</a></li>
+                  <li><a href="">Tiger Photography Tips & Gear</a></li>
+                  <li><a href="">Accommodations</a></li>
+                  <li><a href="">Book Your Safari</a></li>
+               </ul>
+            </div>
+         </div>
+         <div class="copyright flex">
+            <div class="copyright-text">
+               <p>&copy; Copyright 2023 StripeScape Safaris. All Rights Reserved.</p>
+            </div>
+            <div class="link">
+               <ul>
+                  <li><a href="">Home</a></li>
+                  <li><a href="">Contact Us</a></li>
+                  <li><a href="">Gallery</a></li>
+               </ul>
+            </div>
+         </div>
+      </div>
+
+   </footer>
    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"
       integrity="sha512-DUC8yqWf7ez3JD1jszxCWSVB0DMP78eOyBpMa5aJki1bIRARykviOuImIczkxlj1KhVSyS16w2FSQetkD4UU2w=="
       crossorigin="anonymous" referrerpolicy="no-referrer"></script>
    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
       integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
       crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
    <script src="./js/index.js"></script>
 </body>
 
