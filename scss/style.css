@@ -120,6 +120,9 @@ header {
   position: fixed;
   width: 100%;
   z-index: 999;
+  top: 0;
+  left: 0;
+  right: 0;
 }
 @media (min-width: 1024px) {
   header {
@@ -134,6 +137,12 @@ header .header-content {
 header .header-content .logo {
   margin: 13px 0;
 }
+@media (max-width: 1023px) {
+  header .header-content .logo {
+    max-width: 120px;
+    width: 100%;
+  }
+}
 @media (min-width: 1024px) {
   header .header-content .logo img {
     filter: brightness(15);
@@ -145,6 +154,11 @@ header .header-content .nav-link .cross .fa-solid {
   right: 60px;
   font-size: 46px;
   top: 20px;
+}
+@media (max-width: 481px) {
+  header .header-content .nav-link .cross .fa-solid {
+    right: 20px;
+  }
 }
 @media (min-width: 1024px) {
   header .header-content .nav-link .cross {
@@ -205,6 +219,15 @@ header .header-content .menu .fa-solid {
     font-size: 25px;
   }
 }
+@media (max-width: 481px) {
+  header .active .nav-link {
+    padding: 20px;
+    padding-top: 40px;
+  }
+  header .active .nav-link ul {
+    padding: 10px;
+  }
+}
 
 @media (max-width: 1023px) {
   header {
@@ -226,9 +249,14 @@ header.scroll .nav-link ul a {
 .hero-banner {
   position: relative;
 }
+@media (max-width: 481px) {
+  .hero-banner {
+    margin-top: 80px;
+  }
+}
 .hero-banner .owl-dots {
   position: absolute;
-  bottom: 0;
+  bottom: 5px;
   left: 0;
   right: 0;
 }
@@ -288,6 +316,16 @@ header.scroll .nav-link ul a {
     margin-bottom: 20px;
   }
 }
+@media (max-width: 481px) {
+  .about-safari-content .safari-content .left .title-text {
+    font-size: 30px;
+  }
+}
+@media (max-width: 321px) {
+  .about-safari-content .safari-content .left .title-text {
+    font-size: 20px;
+  }
+}
 .about-safari-content .safari-content .left .title-text span {
   font-weight: bold;
   color: #28303d;
@@ -337,6 +375,11 @@ header.scroll .nav-link ul a {
     margin-bottom: -50px;
   }
 }
+@media (max-width: 321px) {
+  .bandhavgarh .bandhavgarh-content .left-col {
+    padding: 20px;
+  }
+}
 .bandhavgarh .bandhavgarh-content .left-col span {
   font-weight: bold;
 }
@@ -369,6 +412,16 @@ header.scroll .nav-link ul a {
   text-transform: uppercase;
   letter-spacing: -0.3px;
 }
+@media (max-width: 481px) {
+  .bandhavgarh .bandhavgarh-content .left-col .title {
+    font-size: 30px;
+  }
+}
+@media (max-width: 321px) {
+  .bandhavgarh .bandhavgarh-content .left-col .title {
+    font-size: 20px;
+  }
+}
 .bandhavgarh .bandhavgarh-content .left-col .paragraph {
   line-height: 1.7;
 }
@@ -377,7 +430,7 @@ header.scroll .nav-link ul a {
 }
 @media (max-width: 1023px) {
   .bandhavgarh .bandhavgarh-content .right-col {
-    height: 500px;
+    height: 350px;
   }
   .bandhavgarh .bandhavgarh-content .right-col img {
     width: 100%;
@@ -389,6 +442,11 @@ header.scroll .nav-link ul a {
 
 .beautiful-places {
   margin: 100px 0;
+}
+@media (max-width: 481px) {
+  .beautiful-places {
+    margin: 50px 0;
+  }
 }
 .beautiful-places span {
   font-weight: bold;
@@ -414,6 +472,16 @@ header.scroll .nav-link ul a {
   font-size: 40px;
   color: #28303d;
 }
+@media (max-width: 481px) {
+  .beautiful-places .places .title {
+    font-size: 30px;
+  }
+}
+@media (max-width: 321px) {
+  .beautiful-places .places .title {
+    font-size: 20px;
+  }
+}
 .beautiful-places .places-content {
   display: flex;
   justify-content: space-between;
@@ -425,6 +493,11 @@ header.scroll .nav-link ul a {
 }
 .beautiful-places .places-content .content {
   padding: 67px 40px 47px 40px;
+}
+@media (max-width: 320px) {
+  .beautiful-places .places-content .content {
+    padding: 20px;
+  }
 }
 @media (min-width: 791px) {
   .beautiful-places .places-content .left-col,
@@ -464,6 +537,11 @@ header.scroll .nav-link ul a {
   margin-bottom: 15px;
   color: #fff;
 }
+@media (max-width: 321px) {
+  .beautiful-places .places-content .left-col .title {
+    font-size: 20px;
+  }
+}
 .beautiful-places .places-content .left-col .description {
   font-size: 16px;
   line-height: 1.7;
@@ -496,6 +574,11 @@ header.scroll .nav-link ul a {
   font-size: 30px;
   margin-bottom: 16px;
 }
+@media (max-width: 321px) {
+  .beautiful-places .places-content .right-col .title {
+    font-size: 20px;
+  }
+}
 .beautiful-places .places-content .right-col .description {
   font-size: 16px;
   font-weight: 500;
@@ -520,6 +603,11 @@ header.scroll .nav-link ul a {
   align-items: center;
   margin-bottom: 20px;
 }
+@media (max-width: 481px) {
+  .tiger-types .tiger-type-header .title {
+    display: block;
+  }
+}
 .tiger-types .tiger-type-header .title .left .top_tiger {
   display: flex;
   align-items: center;
@@ -541,9 +629,24 @@ header.scroll .nav-link ul a {
   text-transform: uppercase;
   color: #28303d;
 }
+@media (max-width: 481px) {
+  .tiger-types .tiger-type-header .title .left .title {
+    font-size: 30px;
+  }
+}
+@media (max-width: 321px) {
+  .tiger-types .tiger-type-header .title .left .title {
+    font-size: 20px;
+  }
+}
 .tiger-types .tiger-type-header .title .right {
   text-align: center;
   justify-content: space-between;
+}
+@media (max-width: 481px) {
+  .tiger-types .tiger-type-header .title .right {
+    display: none;
+  }
 }
 .tiger-types .tiger-type-header .title .right h4 {
   font-size: 18px;
@@ -555,9 +658,20 @@ header.scroll .nav-link ul a {
   color: #f4924b;
   font-weight: 700;
 }
+@media (max-width: 481px) {
+  .tiger-types .tiger-type-header .title .right h5 {
+    font-size: 35px;
+  }
+}
 .tiger-types .tiger-type-header .title .left,
 .tiger-types .tiger-type-header .title .right {
   width: calc((100% - 10px) / 2);
+}
+@media (max-width: 481px) {
+  .tiger-types .tiger-type-header .title .left,
+  .tiger-types .tiger-type-header .title .right {
+    width: 100%;
+  }
 }
 .tiger-types .tiger-type-header .tiger-type-section {
   justify-content: space-between;
@@ -573,6 +687,11 @@ header.scroll .nav-link ul a {
   .tiger-types .tiger-type-header .tiger-type-section .type {
     width: calc((100% - 20px) / 2);
     margin-bottom: 20px;
+  }
+}
+@media (max-width: 481px) {
+  .tiger-types .tiger-type-header .tiger-type-section .type {
+    width: 100%;
   }
 }
 .tiger-types .tiger-type-header .tiger-type-section .type:hover .desc {
@@ -620,7 +739,7 @@ header.scroll .nav-link ul a {
 }
 @media (max-width: 1023px) {
   .highlight-tour .highlight-section .left-col {
-    height: 500px;
+    height: 350px;
     margin-bottom: 20px;
   }
   .highlight-tour .highlight-section .left-col img {
@@ -641,6 +760,11 @@ header.scroll .nav-link ul a {
   padding: 50px;
   color: #fff;
   background: #2c462b;
+}
+@media (max-width: 481px) {
+  .highlight-tour .highlight-section .right-col {
+    padding: 20px;
+  }
 }
 @media (min-width: 1024px) {
   .highlight-tour .highlight-section .right-col {
@@ -668,6 +792,11 @@ header.scroll .nav-link ul a {
   font-size: 40px;
   margin-bottom: 20px;
   text-transform: uppercase;
+}
+@media (max-width: 321px) {
+  .highlight-tour .highlight-section .right-col .title {
+    font-size: 20px;
+  }
 }
 .highlight-tour .highlight-section .right-col .title span {
   font-weight: bold;
@@ -700,6 +829,16 @@ header.scroll .nav-link ul a {
   padding: 140px 0;
   color: #fff;
 }
+@media (max-width: 481px) {
+  .explore .explore-section {
+    padding: 50px 0;
+  }
+}
+@media (max-width: 481px) {
+  .explore .explore-section {
+    width: 100%;
+  }
+}
 .explore .explore-section p {
   color: #fff;
 }
@@ -726,6 +865,11 @@ header.scroll .nav-link ul a {
   margin-bottom: 20px;
   text-transform: uppercase;
   font-weight: 200;
+}
+@media (max-width: 481px) {
+  .explore .explore-section .title {
+    font-size: 30px;
+  }
 }
 .explore .explore-section .button {
   margin-top: 20px;
@@ -762,6 +906,11 @@ header.scroll .nav-link ul a {
 .itinerary .itinerary-section .left .top {
   padding: 50px 0;
 }
+@media (max-width: 481px) {
+  .itinerary .itinerary-section .left .top {
+    padding: 20px 0;
+  }
+}
 .itinerary .itinerary-section .left .top .top-title {
   text-transform: uppercase;
   display: flex;
@@ -781,6 +930,16 @@ header.scroll .nav-link ul a {
   font-size: 40px;
   text-transform: uppercase;
 }
+@media (max-width: 481px) {
+  .itinerary .itinerary-section .left .top .heading-title {
+    font-size: 30px;
+  }
+}
+@media (max-width: 321px) {
+  .itinerary .itinerary-section .left .top .heading-title {
+    font-size: 20px;
+  }
+}
 .itinerary .itinerary-section .left .travels .travel {
   display: flex;
   align-items: center;
@@ -789,24 +948,39 @@ header.scroll .nav-link ul a {
   box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.1);
   gap: 20px;
 }
-@media (max-width: 1023px) {
-  .itinerary .itinerary-section .left .travels .travel .image {
-    position: relative;
-  }
-  .itinerary .itinerary-section .left .travels .travel .image::before {
-    content: "";
+@media (max-width: 481px) {
+  .itinerary .itinerary-section .left .travels .travel {
     display: block;
-    padding-top: 60%;
   }
 }
+.itinerary .itinerary-section .left .travels .travel .image {
+  position: relative;
+}
+.itinerary .itinerary-section .left .travels .travel .image::before {
+  content: "";
+  display: block;
+  padding-top: 60%;
+}
 .itinerary .itinerary-section .left .travels .travel .image img {
-  width: 100%;
-  height: 100%;
   object-fit: cover;
   object-position: top center;
   z-index: 0;
+  object-fit: cover;
+  z-index: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
 @media (max-width: 1023px) {
+  .itinerary .itinerary-section .left .travels .travel .image img {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+@media (max-width: 481px) {
   .itinerary .itinerary-section .left .travels .travel .image img {
     position: absolute;
     top: 0;
@@ -817,24 +991,45 @@ header.scroll .nav-link ul a {
   font-weight: 700;
   font-size: 18px;
 }
+@media (max-width: 481px) {
+  .itinerary .itinerary-section .left .travels .travel .title {
+    font-size: 15px;
+  }
+}
 .itinerary .itinerary-section .left .travels .travel img {
   object-fit: cover;
   position: relative;
   z-index: 0;
-}
-@media (min-width: 1024px) {
-  .itinerary .itinerary-section .left .travels .travel img {
-    max-height: 125px;
-  }
+  height: 100%;
 }
 .itinerary .itinerary-section .left .travels .travel .image {
   width: 33%;
 }
+@media (max-width: 481px) {
+  .itinerary .itinerary-section .left .travels .travel .image {
+    width: 100%;
+  }
+}
 .itinerary .itinerary-section .left .travels .travel .title {
   width: 42%;
 }
+@media (max-width: 481px) {
+  .itinerary .itinerary-section .left .travels .travel .title {
+    width: 100%;
+    margin-top: 20px;
+    font-size: 18px;
+    padding: 0 10px;
+  }
+}
 .itinerary .itinerary-section .left .travels .travel .days {
   width: 25%;
+}
+@media (max-width: 481px) {
+  .itinerary .itinerary-section .left .travels .travel .days {
+    font-size: 18px;
+    padding: 20px 10px;
+    width: 100%;
+  }
 }
 .itinerary .itinerary-section .left .button {
   margin-top: 20px;
@@ -849,12 +1044,8 @@ header.scroll .nav-link ul a {
 }
 .itinerary .itinerary-section .right-col img {
   height: 100%;
-}
-@media (max-width: 1023px) {
-  .itinerary .itinerary-section .right-col img {
-    height: 550px;
-    object-fit: cover;
-  }
+  position: absolute;
+  object-fit: cover;
 }
 .itinerary .itinerary-section .right-col::before {
   content: "";
@@ -866,9 +1057,19 @@ header.scroll .nav-link ul a {
 }
 .itinerary .itinerary-section .right-col .content-itinery {
   padding: 50px;
-  position: absolute;
+  position: relative;
   top: 0;
   z-index: 2;
+}
+@media (max-width: 481px) {
+  .itinerary .itinerary-section .right-col .content-itinery {
+    padding: 20px;
+  }
+}
+@media (max-width: 481px) {
+  .itinerary .itinerary-section .right-col .content-itinery {
+    padding: 20px;
+  }
 }
 .itinerary .itinerary-section .right-col .top-title {
   text-transform: uppercase;
@@ -891,10 +1092,25 @@ header.scroll .nav-link ul a {
   text-transform: uppercase;
   color: #fff;
 }
+@media (max-width: 481px) {
+  .itinerary .itinerary-section .right-col .title {
+    font-size: 30px;
+  }
+}
+@media (max-width: 321px) {
+  .itinerary .itinerary-section .right-col .title {
+    font-size: 20px;
+  }
+}
 .itinerary .itinerary-section .right-col .paragraph {
   margin-top: 50px;
   line-height: 1.7;
   color: #fff;
+}
+@media (max-width: 481px) {
+  .itinerary .itinerary-section .right-col .paragraph {
+    margin-top: 20px;
+  }
 }
 .itinerary .itinerary-section .right-col .time {
   color: #f4924b;
@@ -920,6 +1136,16 @@ header.scroll .nav-link ul a {
   font-weight: 200;
   color: #28303d;
 }
+@media (max-width: 481px) {
+  .why-travel .why-travel-content .title {
+    font-size: 30px;
+  }
+}
+@media (max-width: 321px) {
+  .why-travel .why-travel-content .title {
+    font-size: 20px;
+  }
+}
 .why-travel .why-travel-content .box-section {
   justify-content: space-between;
   margin-top: 40px;
@@ -940,6 +1166,11 @@ header.scroll .nav-link ul a {
 @media (max-width: 1023px) {
   .why-travel .why-travel-content .box-section .box {
     width: calc((100% - 40px) / 2);
+  }
+}
+@media (max-width: 481px) {
+  .why-travel .why-travel-content .box-section .box {
+    width: 100%;
   }
 }
 .why-travel .why-travel-content .box-section .box::before {
@@ -1006,16 +1237,32 @@ header.scroll .nav-link ul a {
   margin-bottom: 20px;
   color: #28303d;
 }
+@media (max-width: 481px) {
+  .top-rated .top-rated-safari .title {
+    font-size: 30px;
+  }
+}
+@media (max-width: 321px) {
+  .top-rated .top-rated-safari .title {
+    font-size: 20px;
+  }
+}
 .top-rated .top-rated-safari .card-section {
   justify-content: space-between;
 }
 .top-rated .top-rated-safari .card-section .card {
   width: calc((100% - 20px) / 2);
   margin-bottom: 30px;
+  box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.1);
 }
 @media (min-width: 791px) {
   .top-rated .top-rated-safari .card-section .card {
     width: calc((100% - 45px) / 4);
+  }
+}
+@media (max-width: 481px) {
+  .top-rated .top-rated-safari .card-section .card {
+    width: 100%;
   }
 }
 .top-rated .top-rated-safari .card-section .card .card-content {
@@ -1069,6 +1316,11 @@ header.scroll .nav-link ul a {
 .testimonals .testimonals-section .image {
   height: 100%;
 }
+@media (max-width: 768px) {
+  .testimonals .testimonals-section .image {
+    max-height: 400px;
+  }
+}
 .testimonals .testimonals-section .image img {
   height: 100%;
   object-fit: cover;
@@ -1079,12 +1331,35 @@ header.scroll .nav-link ul a {
 .testimonals .testimonals-section .left {
   width: 30%;
 }
+@media (max-width: 768px) {
+  .testimonals .testimonals-section .left {
+    display: none;
+  }
+}
 .testimonals .testimonals-section .right {
   width: 65%;
+}
+@media (max-width: 768px) {
+  .testimonals .testimonals-section .right {
+    width: 100%;
+  }
+}
+.testimonals .testimonals-section .right .top-title {
+  margin-top: 30px;
 }
 .testimonals .testimonals-section .right .title {
   font-size: 40px;
   margin-bottom: 20px;
+}
+@media (max-width: 481px) {
+  .testimonals .testimonals-section .right .title {
+    font-size: 30px;
+  }
+}
+@media (max-width: 321px) {
+  .testimonals .testimonals-section .right .title {
+    font-size: 20px;
+  }
 }
 .testimonals .testimonals-section .right .owl-carousel {
   position: relative;
@@ -1106,6 +1381,8 @@ header.scroll .nav-link ul a {
 .testimonals .testimonals-section .right .owl-carousel .owl-dots .active {
   border: 2px solid #f4924b;
   border-radius: 100%;
+  width: 28px;
+  height: 28px;
 }
 .testimonals .testimonals-section .right .owl-carousel .owl-dots .active span {
   background: #f4924b;
@@ -1158,6 +1435,7 @@ footer .footer-section {
 footer .footer-section .col {
   transition: all 0.3s ease-in-out;
   width: calc((100% - 60px) / 5);
+  position: relative;
 }
 @media (max-width: 1280px) {
   footer .footer-section .col {
@@ -1169,6 +1447,11 @@ footer .footer-section .col {
   footer .footer-section .col {
     width: 100%;
   }
+}
+footer .footer-section .col .icon {
+  position: absolute;
+  right: 0;
+  top: 0;
 }
 @media (max-width: 790px) {
   footer .footer-section .col .content {
@@ -1260,12 +1543,23 @@ footer .copyright {
   position: relative;
   z-index: 3;
 }
+@media (max-width: 790px) {
+  footer .copyright {
+    justify-content: center;
+  }
+}
 footer .copyright .copyright-text {
   color: #fff;
+  text-align: center;
 }
 footer .copyright ul {
   display: flex;
   gap: 20px;
+}
+@media (max-width: 790px) {
+  footer .copyright ul {
+    margin-top: 20px;
+  }
 }
 footer .copyright ul li a {
   color: #fff;
